@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     background-color: #161616;
 }
 
@@ -111,12 +111,14 @@ body {
 
 .about {
     padding-top: 35px;
+    padding-bottom: 110px;
     /* чтобы не прерывался белый фон, придётся пользоваться паддингом */
 }
 
 .about-row {
     display: flex;
     justify-content: space-between;
+    margin-left: 140px;
 }
 
 .about-bigtext__gray {
@@ -132,11 +134,12 @@ body {
 }
 
 .about-bigtext__yelblack {
-    margin-top: 0;
+    margin-top: -20px;
     font-size: 80px;
     line-height: 1.2;
     font-weight: 600;
     color: #000000;
+    margin-bottom: 0;
 }
 
 .about-bigtext__yelblack::first-letter {
@@ -160,4 +163,93 @@ body {
     line-height: 1.2;
     font-weight: 400;
     color: #595959;
+}
+
+.about-card {
+    text-align: center;
+}
+
+.about-card__img {
+    padding: 20px 14px 17px 13px;
+    background-color: #e8e8e8;
+    border: 2px solid #ffa800;
+    border-radius: 50%;
+}
+
+.about-card__head {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+.about-card__text {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+/* About - конец */
+/* Featured - начало*/
+.featured-header {
+    font-size: 30px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.featured-header::first-letter {
+    font-size: 50px;
+    color: #ffc600;
+}
+
+.featured-header span {
+    color: #000000;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.featured-nav {
+    margin-left: 80px;
+    margin-bottom: 25px;
+}
+
+.featured-nav__item {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #101010;
+    margin-right: 35px;
+    text-align: center;
+}
+
+.featured-nav__item p{
+    margin-bottom: 5px;
+}
+
+.featured-nav__underline {
+    width: 50%;
+    height: 1px;
+    background-color: #ffc600;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.featured-nav__item:hover .featured-nav__underline {
+    opacity: 1;
+}
+
+.featured-pics {
+    display: flex;
+    flex-wrap: wrap;
 }
