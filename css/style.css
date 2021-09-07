@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*background-color: #161616;*/
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.header {
+    background-image: url('../img/top_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 1086px;
+}
+
+.page-head {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-head__header {
+    margin-top: 0;
+    padding-top: 114px;
+    font-size: 202.2px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.page-head__header::first-letter{
+    color: #ffc600;
+}
