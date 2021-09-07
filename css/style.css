@@ -3,14 +3,18 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    /*background-color: #161616;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #161616;
 }
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
+
+/* Header - начало */
 .header {
     background-image: url('../img/top_bg.jpg');
     background-repeat: no-repeat;
@@ -18,21 +22,142 @@ body {
     height: 1086px;
 }
 
+/* чтобы белый фон контейнера не перекрывал заднее изображение хэдера */
+.header .container {
+    background: none;
+}
+
 .page-head {
-    margin: 0 auto;
-    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 64px;
 }
 
 .page-head__header {
     margin-top: 0;
-    padding-top: 114px;
+    padding-top: 35px;
     font-size: 202.2px;
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: -0.05em;
     color: #ffffff;
+    margin-bottom: 0;
 }
 
-.page-head__header::first-letter{
+.page-head__header::first-letter {
     color: #ffc600;
+}
+
+.page-head__text {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.page-head__text::first-letter {
+    color: #ffc600;
+}
+
+.page-head__link {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffc600;
+    text-decoration: none;
+}
+
+.agenda {
+    background-image: url('../img/top_fg.jpg');
+    height: 654px;
+}
+
+.agenda-head {
+    padding-top: 70px;
+    padding-left: 50px;
+    font-size: 60px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.agenda-head::first-letter {
+    color: #ffc600;
+}
+
+.agenda-nav {
+    margin-left: 50px;
+}
+
+.nav-item {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffc600;
+    margin-right: 35px;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+    border-bottom: 1px #ffc600 solid;
+}
+
+/* Header - конец */
+/* About - начало */
+
+.about {
+    padding-top: 35px;
+    /* чтобы не прерывался белый фон, придётся пользоваться паддингом */
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-bigtext__gray {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #717171;
+    margin-bottom: 0;
+}
+
+.about-bigtext__gray::first-letter {
+    font-size: 50px;
+}
+
+.about-bigtext__yelblack {
+    margin-top: 0;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000000;
+}
+
+.about-bigtext__yelblack::first-letter {
+    color: #ffc600;
+}
+
+.about-text {
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+.about-text__black {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+.about-text__gray {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #595959;
 }
