@@ -37,6 +37,7 @@ body {
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .colored-header::first-letter {
@@ -94,6 +95,10 @@ body {
     margin-left: 35px !important;
 }
 
+.ml-50 {
+    margin-left: 50px !important;
+}
+
 /* КОНЕЦ отступ X пикселей слева */
 
 /* отступ X пикселей справа */
@@ -102,6 +107,13 @@ body {
 }
 
 /* КОНЕЦ отступ X пикселей справа */
+
+/* отступ X пикселей сверху */
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+/* КОНЕЦ отступ X пикселей сверху */
 
 /* КОНЕЦ общее */
 
@@ -328,4 +340,64 @@ body {
 .strategic-row {
     margin: 0 170px;
     display: flex;
+}
+
+/* strategic - КОНЕЦ */
+/* services - НАЧАЛО*/
+.services {
+    background-image: url('../img/services_bg.jpg');
+    height: 478px;
+    margin-bottom: 65px;
+    /* 85 - 20 from header */
+}
+
+.services-header {
+    padding-top: 41px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.services-rows {
+    margin-left: 475px;
+    margin-right: 185px;
+    margin-bottom: 55px;
+}
+
+.services-rows {
+    margin-left: 475px;
+    margin-right: 185px;
+}
+
+.services-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-elem {
+    text-align: left;
+    color: #fff;
+    width: 230px;
+}
+
+.services-elem__head {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.services-elem__text {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.team-agenda {
+    display: flex;
+    align-items: center;
+}
+
+.team-agenda__text {
+        margin-left: 145px;
+        max-width: 620px;
+        margin-bottom: 25px;
 }
