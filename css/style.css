@@ -13,6 +13,97 @@ body {
     background-color: #fff;
 }
 
+/* общее */
+/* максимальная ширина Х пикселей + перенос по словам */
+.mw-350 {
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+/* КОНЕЦ максимальная ширина Х пикселей + перенос по словам */
+
+/* разворот по строке для флекс блока */
+.flex-row__reversed {
+    flex-direction: row-reverse;
+}
+
+/* КОНЕЦ разворот по строке для флекс блока */
+
+/* заголовок с первой жёлтой буквой и большой буквой в тегах span */
+.colored-header {
+    font-size: 30px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.colored-header::first-letter {
+    font-size: 50px;
+    color: #ffc600;
+}
+
+.colored-header span {
+    color: #000000;
+    font-size: 50px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* простановка первой буквы чёрной, а не жёлтой - нужно в нескольки местах*/
+.nocolor::first-letter {
+    font-size: 50px;
+    color: #000000;
+}
+
+
+/* КОНЕЦ заголовок с первой жёлтой буквой и большой буквой в тегах span */
+
+
+/* наклонный чёрный текст 16 пикселей */
+.italic-text__black {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    /* так более соответствует оригинальному Meriad Pro */
+}
+
+/* КОНЕЦ наклонный чёрный текст 16 пикселей */
+
+/* обычный серый цвет 14 пикселей */
+.common-text__gray {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #595959;
+}
+
+/* КОНЕЦ обычный серый цвет 14 пикселей */
+
+/* отступ X пикселей слева */
+.ml-80 {
+    margin-left: 80px !important;
+}
+
+.ml-35 {
+    margin-left: 35px !important;
+}
+
+/* КОНЕЦ отступ X пикселей слева */
+
+/* отступ X пикселей справа */
+.mr-65 {
+    margin-right: 65px !important;
+}
+
+/* КОНЕЦ отступ X пикселей справа */
+
+/* КОНЕЦ общее */
 
 /* Header - начало */
 .header {
@@ -151,20 +242,6 @@ body {
     word-wrap: break-word;
 }
 
-.about-text__black {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #000000;
-}
-
-.about-text__gray {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #595959;
-}
-
 .about-card {
     text-align: center;
 }
@@ -195,29 +272,12 @@ body {
 
 /* About - конец */
 /* Featured - начало*/
-.featured-header {
-    font-size: 30px;
-    color: #000000;
-    line-height: 1.2;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-left: 80px;
-    margin-bottom: 20px;
-}
 
-.featured-header::first-letter {
-    font-size: 50px;
-    color: #ffc600;
-}
-
-.featured-header span {
-    color: #000000;
-    font-size: 50px;
-    line-height: 1.2;
+.featured {
+    padding-bottom: 65px;
 }
 
 .featured-nav {
-    margin-left: 80px;
     margin-bottom: 25px;
 }
 
@@ -233,7 +293,7 @@ body {
     text-align: center;
 }
 
-.featured-nav__item p{
+.featured-nav__item p {
     margin-bottom: 5px;
 }
 
@@ -252,4 +312,20 @@ body {
 .featured-pics {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* featured - конец */
+/* strategic - начало*/
+.strategic {
+    padding-bottom: 65px;
+}
+
+.strategic-agenda {
+    margin-right: 64px;
+    margin-bottom: 45px;
+}
+
+.strategic-row {
+    margin: 0 170px;
+    display: flex;
 }
